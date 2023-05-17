@@ -1,8 +1,9 @@
 // 格子维度
 import 'dart:ui';
 
-int rowLength = 15;
-int colLength = 10;
+int rowLength = 25;
+int colLength = 20;
+int centerPosition = (colLength / 2).floor();
 
 // 移动方向类型
 enum Direction {

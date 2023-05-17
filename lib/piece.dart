@@ -21,64 +21,64 @@ class Piece {
       case Tetromino.L:
         // 正向整数减去30倒退三轮，让方块一点一点出现
         position = [
-          -26,
-          -16,
-          -6,
-          -5,
+          centerPosition - 3 * colLength,
+          centerPosition - 2 * colLength,
+          centerPosition - colLength,
+          centerPosition - colLength + 1,
         ];
         break;
       case Tetromino.J:
         // 正向整数减去30倒退三轮，让方块一点一点出现
         position = [
-          -25,
-          -15,
-          -5,
-          -6,
+          centerPosition - 3 * colLength,
+          centerPosition - 2 * colLength,
+          centerPosition - colLength,
+          centerPosition - colLength - 1,
         ];
         break;
       case Tetromino.I:
         // 正向整数减去10倒退一轮，让方块一点一点出现
         position = [
-          -4,
-          -5,
-          -6,
-          -7,
+          centerPosition - colLength - 2,
+          centerPosition - colLength - 1,
+          centerPosition - colLength,
+          centerPosition - colLength + 1,
         ];
         break;
       case Tetromino.O:
         // 正向整数减去20倒退二轮，让方块一点一点出现
         position = [
-          -15,
-          -16,
-          -5,
-          -6,
+          centerPosition - 2 * colLength,
+          centerPosition - 2 * colLength + 1,
+          centerPosition - colLength,
+          centerPosition - colLength + 1,
         ];
         break;
       case Tetromino.S:
         // 正向整数减去20倒退二轮，让方块一点一点出现
         position = [
-          -15,
-          -14,
-          -6,
-          -5,
+          centerPosition - 2 * colLength + 1,
+          centerPosition - 2 * colLength,
+          centerPosition - colLength,
+          centerPosition - colLength - 1,
         ];
         break;
       case Tetromino.Z:
         // 正向整数减去20倒退二轮，让方块一点一点出现
         position = [
-          -16,
-          -15,
-          -5,
-          -4,
+          centerPosition - 2 * colLength - 1,
+          centerPosition - 2 * colLength,
+          centerPosition - colLength,
+          centerPosition - colLength + 1,
         ];
         break;
       case Tetromino.T:
         // 正向整数减去30倒退三轮，让方块一点一点出现
         position = [
-          -26,
-          -16,
-          -15,
-          -6,
+          centerPosition - 3 * colLength,
+          centerPosition - 2 * colLength,
+          centerPosition - 2 * colLength + 1,
+          centerPosition - colLength,
         ];
         break;
       default:
